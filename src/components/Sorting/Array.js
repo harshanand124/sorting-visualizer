@@ -200,11 +200,11 @@ const Array = () => {
                     >Generate New Array</button>
 
                     {/* button for input */}
-                    <button 
+                    {/* <button 
                         style={customBtnStyle}
                         onClick={() => setModalView(true)}
                         disabled={generateBtnState}
-                    >Input Elements</button>
+                    >Input Elements</button> */}
                 </div>
             </div>
             <Bars 

@@ -73,10 +73,14 @@ export const llBtnStyle = {
 
 export const gridContainer = {
     display: "grid",
-    gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", 
+    gridTemplateColumns: "repeat(3, 1fr)", // Ensures a maximum of 3 columns
     gridGap: "50px",
-    margin: "30px 0"
+    margin: "30px 0",
+    "@media (max-width: 900px)": {
+        gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", // Responsive wrapping below the threshold
+    },
 };
+
 
 export const selectElement = {
     padding: "12.5px 10px",
