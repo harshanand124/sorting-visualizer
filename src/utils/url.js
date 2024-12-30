@@ -5,5 +5,6 @@ export default {
     sLLInsertion: '/single-linked-list/insertion',
     sLLDeletion: '/single-linked-list/deletion',
     pathFinding: '/path/finding',
-    trees: '/tree'
+    trees: '/tree',
+    stack : '/stack'
 }

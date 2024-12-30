@@ -12,6 +12,8 @@ const SLLTraversal = lazy(() => import('./routes/SLLTraversal'));
 const SLLInsertion = lazy(() => import('./routes/SLLInsertion'));
 const PathFinding = lazy(() => import('./routes/PathFinding'))
 // const Tree = lazy(() => import('./routes/Tree'));
+const Stack = lazy(() => import('./routes/Stack'));
+const Queue = lazy(() => import('./routes/Queue'));
 
 function App() {
     return (
@@ -25,6 +27,8 @@ function App() {
                     <Route exact path={url.sLLInsertion} component={SLLInsertion} />
                     <Route exact path={url.pathFinding} component={PathFinding} />
                     {/* <Route exact path={url.trees} component={Tree} /> */}
+                    <Route exact path={url.stack} component={Stack}/>
+                    <Route exact path={url.queue} component={Queue}/>
                     <Route exact path='*' component={NotFound} />
                 </Switch>
             </Suspense>

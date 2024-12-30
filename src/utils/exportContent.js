@@ -30,6 +30,21 @@ export const home = [
         name: "Tree",
         src: require('../assets/path.gif'),
         alt: "tree-image"
+    },
+    {
+        url : url.stack,
+        name : "Stack",
+        src : require('../assets/stack.gif'),
+        alt : "stack-image"
+    },
+    {
+        url : url.Queue,
+        name : "Queue",
+        src : require('../assets/path.gif'),
+        alt : "queue-image"
+    },
+    {
+        // url : 
     }
 ];
 
