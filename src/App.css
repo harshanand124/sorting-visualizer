@@ -90,8 +90,8 @@ a {
 /* methods */
 .methods-container {
     position: fixed;
-    left: 20px;
-    top: 10px;
+    left: 0.5rem;
+    top: 65px;
     z-index: 10000;
     display: flex;
 }
