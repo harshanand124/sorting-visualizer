@@ -48,6 +48,12 @@ export const home = [
         name : "Graph",
         src : require('../assets/graph.gif'),
         alt : "graph-image"
+    },
+    {
+        url : url.knapsack,
+        name : "Knapsack",
+        src : require('../assets/path.gif'),
+        alt : "knapsack-image"
     }
 ];
 

@@ -15,6 +15,7 @@ const Tree = lazy(() => import('./routes/Tree'));
 const Stack = lazy(() => import('./routes/Stack'));
 const Queue = lazy(() => import('./routes/Queue'));
 const Graph = lazy(()=>import('./routes/Graph'))
+const Knapsack = lazy(()=> import('./routes/Knapsack'))
 
 function App() {
     return (
@@ -31,6 +32,7 @@ function App() {
                     <Route exact path={url.stack} component={Stack}/>
                     <Route exact path={url.queue} component={Queue}/>
                     <Route exact path={url.graph} component={Graph}/>
+                    <Route exact path={url.knapsack} component={Knapsack}/>
                     <Route exact path='*' component={NotFound} />
                 </Switch>
             </Suspense>
