@@ -13,12 +13,12 @@ export const home = [
         src: require('../assets/linkedList.gif'),
         alt: "linked-list-img"
     },
-    // {
-    //     url: url.sLLInsertion,
-    //     name: "Single Linked List Insertion",
-    //     src: require('../assets/insert-begin.gif'),
-    //     alt: "linked-list-img"
-    // },
+    {
+        url: url.sLLInsertion,
+        name: "Single Linked List Insertion",
+        src: require('../assets/insert-begin.gif'),
+        alt: "linked-list-img"
+    },
     {
         url: url.pathFinding,
         name: "Path Finding Algorithm",
@@ -28,7 +28,7 @@ export const home = [
     {
         url: url.trees,
         name: "Tree",
-        src: require('../assets/path.gif'),
+        src: require('../assets/trees.gif'),
         alt: "tree-image"
     },
     {
@@ -38,13 +38,16 @@ export const home = [
         alt : "stack-image"
     },
     {
-        url : url.Queue,
+        url : url.queue,
         name : "Queue",
-        src : require('../assets/path.gif'),
+        src : require('../assets/queue.gif'),
         alt : "queue-image"
     },
     {
-        // url : 
+        url : url.graph,
+        name : "Graph",
+        src : require('../assets/graph.gif'),
+        alt : "graph-image"
     }
 ];
 

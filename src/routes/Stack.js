@@ -52,7 +52,8 @@ const App = () => {
         <h1 className={styles.heading}>Stack Visualizer</h1>
       </header>
 
-      <div className={styles.stackContainer}>
+      <div className={styles.wrap}>
+        <div className={styles.stackContainer}>
         <div className={styles.controls}>
           <input
             type="number"
@@ -98,6 +99,7 @@ const App = () => {
               <div className={styles.infoBox}>{stack.length}</div>
             </div>
           </div>
+        </div>
         </div>
 
         <div className={styles.messageBox}>

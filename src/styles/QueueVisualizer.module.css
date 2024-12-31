@@ -1,0 +1,82 @@
+.queueVisualizer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f7fa; /* Light background */
+  color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
+  max-width: 600px;
+  margin-top:3%;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input {
+  padding: 10px;
+  width: 180px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.button {
+  padding: 10px 15px;
+  background-color: #4caf50; /* Green background */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 14px;
+}
+
+.button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.queueContainer {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 15px;
+  width: 100%;
+  max-width: 500px;
+  overflow-x: auto;
+}
+
+.queueItem {
+  width: 60px;
+  height: 60px;
+  background-color: #007bff; /* Blue background */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  font-weight: bold;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.emptyQueue {
+  color: #999;
+  font-size: 14px;
+}

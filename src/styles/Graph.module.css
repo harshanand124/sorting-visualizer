@@ -1,0 +1,70 @@
+  .header {
+    height: 55px;
+    background-color: #aeced2;
+    border-bottom: 1px solid #737373;
+    margin-bottom: 20px;
+  }
+  
+  .headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    max-width: 950px;
+    margin: 0 auto;
+    height: 100%;
+  }
+  
+  .mazeContainer span {
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .mazeContainer span:hover {
+    color: #737373;
+  }
+  
+  .mazeContainer .active {
+    font-weight: bold;
+    color: #ff5722;
+  }
+  
+  .graphContainer {
+    display: flex;
+    justify-content: space-around;
+    max-width: 950px;
+    margin: 0 auto;
+  }
+  
+  .canvasContainer {
+    text-align: center;
+    margin: 10px;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .controls button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #000;
+    font-weight: 700;
+  }
+  
+  .controls i {
+    margin-right: 5px;
+  }
+  
+  .output {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .output h3 {
+    margin-bottom: 10px;
+  }
+  

@@ -7,7 +7,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: -5%;
+  margin-top: -1%;
+  margin-bottom: 5rem;
 }
 
 .heading {
@@ -15,17 +16,21 @@
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
-  margin-bottom : 2.5rem;
+  margin-bottom : 1rem;
 }
 
 .stackContainer {
-  max-width: 540px;
   margin: 0 auto;
+}
+
+.wrap{
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 20px;
-  min-height: 600px;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
 }
 
 .controls {
@@ -103,11 +108,20 @@
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  background-color: #e2a6a6;
+  background-color: green;
+  height: 1rem;
 }
 
 .messageBox {
   margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.messageBox h2{
+  color: #000;
+  font-size: 1.5rem;
 }
 
 .message {
@@ -116,4 +130,6 @@
   background-color: #000;
   border-radius: 4px;
   border: 1px solid #ffc107;
+  min-height: 5rem;
+  min-width: 15rem;
 }

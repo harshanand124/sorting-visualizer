@@ -73,6 +73,7 @@ a {
 .home-page {
     width: 80%;
     margin: 30px auto;
+    margin-bottom: 10rem;
 }
 .home-page a {
     color: #fff;
@@ -84,7 +85,8 @@ a {
 }
 .home-page img {
     box-shadow: 0 0 1px #eee;
-    width: 100%;
+    width: 400px;
+    height: 200px;
 }
 
 /* methods */

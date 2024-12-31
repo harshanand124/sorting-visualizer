@@ -1,7 +1,8 @@
-import React, { useState } from "react";
-import "../styles/QueueVisualizer.css";
+import React, { useLayoutEffect, useState } from "react";
+import styles from "../styles/QueueVisualizer.module.css";
 
 const QueueVisualizer = () => {
+  
   const [queue, setQueue] = useState([]);
   const [inputValue, setInputValue] = useState("");
 
@@ -35,28 +36,33 @@ const QueueVisualizer = () => {
     setQueue([]);
   };
 
+  useLayoutEffect(()=>{document.title = "Queue"},[])
+
   return (
-    <div className="queue-visualizer">
-      <h1>Queue Algorithm Visualizer</h1>
-      <div className="controls">
+    <div className={styles.queueVisualizer}>
+      <h1 className={styles.title}>Queue</h1>
+      <div className={styles.controls}>
         <input
           type="text"
           placeholder="Enter value"
           value={inputValue}
           onChange={(e) => setInputValue(e.target.value)}
+          className={styles.input}
         />
-        <button onClick={enqueue}>Enqueue</button>
-        <button onClick={dequeue}>Dequeue</button>
-        <button onClick={peek}>Peek</button>
-        <button onClick={clearQueue}>Clear</button>
+        <button onClick={enqueue} className={styles.button}>Enqueue</button>
+        <button onClick={dequeue} className={styles.button}>Dequeue</button>
+        <button onClick={peek} className={styles.button}>Peek</button>
+        <button onClick={clearQueue} className={styles.button}>Clear</button>
       </div>
-      <div className="queue-container">
+      <div className={styles.queueContainer}>
         {queue.map((item, index) => (
-          <div key={index} className="queue-item">
+          <div key={index} className={styles.queueItem}>
             {item}
           </div>
         ))}
-        {queue.length === 0 && <div className="empty-queue">Queue is Empty</div>}
+        {queue.length === 0 && (
+          <div className={styles.emptyQueue}>Queue is Empty</div>
+        )}
       </div>
     </div>
   );
