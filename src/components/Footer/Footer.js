@@ -14,7 +14,7 @@ function Footer() {
         marginTop: "30px" 
     }}>
         <p>&copy; {new Date().getFullYear()} Data Structure Visualizer. All rights reserved.</p>
-        <p>Designed and developed with 💻 by <a href="https://github.com/rohitPandey469" style={{ color: "#00d8ff" }}>Harsh Anand</a></p>
+        <p>Designed and developed with 💻 by <a href="https://github.com/harshanand124" style={{ color: "#00d8ff" }}>Harsh Anand</a></p>
     </footer>
   )
 }
