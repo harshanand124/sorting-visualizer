@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 import url from './utils/url';
 import NotFound from './routes/NotFound';
-import Header from "./components/Header/Header"
+// import Header from "./components/Header/Header"
 import Footer from './components/Footer/Footer';
 
 const Home = lazy(() => import('./routes/Home'));
@@ -20,7 +20,6 @@ const Knapsack = lazy(()=> import('./routes/Knapsack'))
 function App() {
     return (
         <Router>
-            // <Header/>
             <Suspense fallback={<div>Loading...</div>}>
                 <Switch>
                     <Route exact path={url.main} component={Home} />
