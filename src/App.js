@@ -20,7 +20,7 @@ const Knapsack = lazy(()=> import('./routes/Knapsack'))
 function App() {
     return (
         <Router>
-            <Header/>
+            // <Header/>
             <Suspense fallback={<div>Loading...</div>}>
                 <Switch>
                     <Route exact path={url.main} component={Home} />
